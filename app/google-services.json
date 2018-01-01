@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "31335071163",
+    "firebase_url": "https://ididitlogin.firebaseio.com",
+    "project_id": "ididitlogin",
+    "storage_bucket": "ididitlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31335071163:android:9009ac76fbd55d90",
+        "android_client_info": {
+          "package_name": "edu.upc.eseiaat.pma.ididitlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31335071163-b0p4tnf2h6rscch9266tatu50523bjdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.upc.eseiaat.pma.ididitlogin",
+            "certificate_hash": "cd9cec924bca289dbf65c2068cb2ef41e01fcf54"
+          }
+        },
+        {
+          "client_id": "31335071163-e1a6sb7ghgn39aha7633idrv3t9ejo9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNhFbXKHIVzeU_jwzcdBWXKC1gsBjyTyo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31335071163-e1a6sb7ghgn39aha7633idrv3t9ejo9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
