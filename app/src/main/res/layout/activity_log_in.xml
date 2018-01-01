@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context="edu.upc.eseiaat.pma.ididitlogin.LogInActivity">
 
-    <TextView
+    <com.google.android.gms.common.SignInButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcomme to "
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp" />
 
 </android.widget.RelativeLayout>
