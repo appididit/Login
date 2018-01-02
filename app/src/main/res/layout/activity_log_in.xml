@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="edu.upc.eseiaat.pma.ididitlogin.LogInActivity">
 
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_signin_Facebook"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_signin_google"
         android:layout_width="wrap_content"

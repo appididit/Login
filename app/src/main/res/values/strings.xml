@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">IdiditLogin</string>
     <string name="login_ok">Login correct!</string>
+    <string name="Error">An error has ocurred!</string>
+    <string name="facebook_app_id">137287233603186</string>
+    <string name="fb_login_protocol_scheme">fb137287233603186</string>
+
+
 </resources>

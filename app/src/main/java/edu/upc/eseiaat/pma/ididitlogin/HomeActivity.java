@@ -104,12 +104,9 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
 
                     goLogInActivity();
                 }
-
                 else { }
 
-
         } });
-
 
     }
 
@@ -119,9 +116,11 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         startActivity(intent);
     }
 
-
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.Error, Toast.LENGTH_SHORT);
+        toast.show();
 
     }
 }
