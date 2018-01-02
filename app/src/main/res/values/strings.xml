@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IdiditLogin</string>
+    <string name="login_ok">Login correct!</string>
 </resources>

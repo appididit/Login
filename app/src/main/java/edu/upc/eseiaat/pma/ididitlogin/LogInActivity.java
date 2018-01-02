@@ -80,6 +80,7 @@ public class LogInActivity extends AppCompatActivity implements GoogleApiClient.
 
     private void goHome(){
         Intent intent = new Intent(this, HomeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 

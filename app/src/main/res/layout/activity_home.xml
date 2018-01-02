@@ -7,6 +7,25 @@
     tools:context="edu.upc.eseiaat.pma.ididitlogin.HomeActivity">
 
 
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="mail" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:background="@color/colorAccent" />
+
     <Button
         android:id="@+id/btn_signout_google"
         android:layout_width="wrap_content"
@@ -14,8 +33,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="74dp"
+        android:layout_marginBottom="155dp"
+        android:onClick="logOut"
         android:text="Sign Out"
         android:visibility="visible" />
+
 
 </android.widget.RelativeLayout>
