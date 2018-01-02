@@ -8,14 +8,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:31335071163:android:9009ac76fbd55d90",
+        "mobilesdk_app_id": "1:31335071163:android:e7c088d7913b7490",
         "android_client_info": {
           "package_name": "edu.upc.eseiaat.pma.ididitlogin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "31335071163-b0p4tnf2h6rscch9266tatu50523bjdo.apps.googleusercontent.com",
+          "client_id": "31335071163-4kd58hikai5l1s8f1fhc47nhhkop46c6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "edu.upc.eseiaat.pma.ididitlogin",

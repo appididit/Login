@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.upc.eseiaat.pma.ididitlogin.LogInActivity">
+    tools:context="edu.upc.eseiaat.pma.ididitlogin.HomeActivity">
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_signin_google"
+
+    <Button
+        android:id="@+id/btn_signout_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="209dp" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="74dp"
+        android:text="Sign Out"
+        android:visibility="visible" />
 
 </android.widget.RelativeLayout>
