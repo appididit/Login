@@ -7,36 +7,53 @@
     tools:context="edu.upc.eseiaat.pma.ididitlogin.HomeActivity">
 
 
-    <TextView
-        android:id="@+id/nameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/photoImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="mail" />
-
     <ImageView
         android:id="@+id/photoImageView"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:layout_alignParentTop="true"
 
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
+        android:layout_alignLeft="@+id/Btn_addTask"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Btn_addTask"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="58dp"
         android:background="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/Btn_addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp" />
 
     <Button
         android:id="@+id/btn_signout_google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/Btn_addTask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="155dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
         android:onClick="logOut"
         android:text="Sign Out"
         android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/photoImageView"
+        app:srcCompat="@mipmap/calendari" />
 
 
 </android.widget.RelativeLayout>
