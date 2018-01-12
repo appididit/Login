@@ -4,15 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -21,10 +18,10 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.ResultCallbacks;
 import com.google.android.gms.common.api.Status;
-import com.google.firebase.auth.FirebaseAuth;
 import com.squareup.picasso.Picasso;
+
+//import com.bumptech.glide.Glide;
 
 
 public class HomeActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
@@ -40,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        nameTextView = findViewById(R.id.nameTextView);
+
         photoImageView = findViewById(R.id.photoImageView);
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -52,8 +49,29 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
                 .addApi(Auth.GOOGLE_SIGN_IN_API, googleSignInOptions)
                 .build();
 
+        ImageButton btn_addTask = (ImageButton) findViewById(R.id.Btn_addTask);
+
+
+        btn_addTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                goNext();
+
+            }
+        });
+
 
     }
+
+    private void goNext() {
+        Intent intent = new Intent(this, addnewtask.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+
+
 
     @Override
     protected void onStart() {
@@ -86,7 +104,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
             toast.show();
 
             Picasso.with(this).load(account.getPhotoUrl()).into(photoImageView);
-            nameTextView.setText(account.getEmail());
+            //nameTextView.setText(account.getEmail());
 
     } else{
 
