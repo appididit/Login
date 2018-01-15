@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upc.eseiaat.pma.ididitlogin.addnewtask">
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/edit_note"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#a5cf0000"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:layout_alignLeft="@+id/edit_note" />
+
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="280sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_tags"
+        android:layout_below="@+id/edit_tags"
+        android:layout_marginTop="11dp"
+        android:hint="Notes"
+        android:layout_alignLeft="@+id/edit_tags" />
+
+    <EditText
+        android:id="@+id/edit_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox_reminder"
+        android:layout_below="@+id/spinner_priority"
+        android:layout_marginTop="18dp"
+        android:hint="#tags"
+        android:layout_alignLeft="@+id/checkBox_reminder" />
+
+    <CheckBox
+        android:id="@+id/checkBox_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edit_task"
+        android:layout_below="@+id/edit_task"
+        android:checked="true"
+        android:text="Remind me"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/edit_task" />
+
+    <Spinner
+        android:id="@+id/spinner_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner_activity"
+        android:layout_alignStart="@+id/spinner_activity"
+        android:layout_below="@+id/spinner_activity"
+        android:layout_marginTop="27dp"
+        android:layout_alignRight="@+id/spinner_activity"
+        android:layout_alignLeft="@+id/spinner_activity" />
+
+    <EditText
+        android:id="@+id/edit_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="37dp"
+        android:hint="What do you want to do?"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="37dp" />
+
+    <ImageButton
+        android:id="@+id/button_pickdate"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_task"
+        android:layout_toEndOf="@+id/edit_task"
+        android:layout_toRightOf="@+id/edit_task" />
+
+    <Spinner
+        android:id="@+id/spinner_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_task"
+        android:layout_alignStart="@+id/edit_tags"
+        android:layout_below="@+id/checkBox_reminder"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/edit_task"
+        android:layout_alignLeft="@+id/edit_tags" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/button_delete"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/spinner_priority"
+        android:backgroundTint="#9431d400"
+        android:text="OK"
+        android:textColor="#5b5b5b"
+        tools:ignore="RtlCompat"
+        android:layout_marginLeft="31dp" />
+
+</android.widget.RelativeLayout>

@@ -6,4 +6,14 @@
     <string name="fb_login_protocol_scheme">fb137287233603186</string>
 
 
+    <string name="confirm">Confirmation</string>
+    <string name="remove">Remove</string>
+    <string name="confirm_message">Are you sure you want to remove \'%1$s\'?</string>
+    <string name="cannot_write">Could\'nt write list</string>
+    <string name="cannot_read">Couldn\'t read list</string>
+    <string name="clear_checked">Clear checked items</string>
+    <string name="clear_all">Clear all</string>
+    <string name="confirm_clear_all">Are you sure you want to clear all items?</string>
+
+
 </resources>

@@ -6,12 +6,25 @@
     android:layout_height="match_parent"
     tools:context="edu.upc.eseiaat.pma.ididitlogin.LogInActivity">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_signin_google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="Welcome! Get ready to start organitzing your life!"
+        android:textSize="18sp" />
+
     <com.facebook.login.widget.LoginButton
         android:id="@+id/btn_signin_Facebook"
-        android:layout_centerHorizontal="true"
 
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_signin_google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_signin_google"
