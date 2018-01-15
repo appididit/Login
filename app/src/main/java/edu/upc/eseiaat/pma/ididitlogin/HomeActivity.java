@@ -100,8 +100,8 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
 
             GoogleSignInAccount account =result.getSignInAccount();
 
-            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.login_ok), Toast.LENGTH_SHORT);
-            toast.show();
+            //Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.login_ok), Toast.LENGTH_SHORT);
+            //toast.show();
 
             Picasso.with(this).load(account.getPhotoUrl()).into(photoImageView);
             //nameTextView.setText(account.getEmail());
